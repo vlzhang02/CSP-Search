@@ -1,0 +1,30 @@
+******************************************************************************
+* HW02: Constraint Satisfaction Solver
+* CS131 Summer 2022
+* README
+* Author: Valerie Zhang vzhang02
+******************************************************************************
+
+Program Purpose:
+----------------
+    The purpose of this program is to solve a crossword puzzle using a user 
+    provided grid and dictionary. 
+
+    *This program is written in C++.
+
+Compile/run:
+-----------
+    Compile using:
+        make 
+    Run executable with:
+        ./solver gridFile dictionaryFile
+
+Notes:
+------
+    - the number of recursive calls for the 01 grid with the small dictionary 
+      is about 400 more than the reference, the result is also different. This
+      may be due to differences in implementation with the word variable table
+      and which word is chosen at the very start of the search.
+    - the number of recursive calls for the 01 grid with the medium dictionary
+      is a little over 9000 less than the reference. May be due to the same 
+      reasoning provided above
